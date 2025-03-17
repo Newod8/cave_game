@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://ctabk4c5wfulg"]
+
+[ext_resource type="Texture2D" uid="uid://dccpkwiv5h12m" path="res://assets/explorer_sprite.png" id="1_27xqp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fcql8"]
+atlas = ExtResource("1_27xqp")
+region = Rect2(0, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l7772"]
+atlas = ExtResource("1_27xqp")
+region = Rect2(8, 0, 8, 8)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lprog"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fcql8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l7772")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_lprog")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.381864
