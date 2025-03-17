@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://ctabk4c5wfulg"]
+[gd_scene load_steps=6 format=3 uid="uid://ctabk4c5wfulg"]
 
 [ext_resource type="Texture2D" uid="uid://dccpkwiv5h12m" path="res://assets/explorer_sprite.png" id="1_27xqp"]
+[ext_resource type="Script" uid="uid://d3xssxesfjbyf" path="res://scripts/explorer.gd" id="2_fcql8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fcql8"]
 atlas = ExtResource("1_27xqp")
@@ -24,8 +25,9 @@ animations = [{
 "speed": 2.0
 }]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+[node name="Explorer" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_lprog")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.381864
+frame_progress = 0.340838
+script = ExtResource("2_fcql8")
